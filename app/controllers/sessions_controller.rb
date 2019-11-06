@@ -11,7 +11,7 @@ class SessionsController < ApplicationController
     redirect_to controller: 'welcome', action: 'home'
   end
 
-  def destroy
+  def logout
     session.delete :user_id
     redirect_to '/'
   end
